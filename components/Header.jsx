@@ -4,7 +4,7 @@ import Nav from "./Nav";
 import MobileNav from "./MobileNav";
 const Header = () => {
   return (
-    <header className="py-8 xl:py-4">
+    <header className="py-8 xl:py-6">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
           <Image 

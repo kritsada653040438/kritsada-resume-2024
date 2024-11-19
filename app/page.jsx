@@ -1,5 +1,4 @@
 import { FiDownload } from "react-icons/fi";
-import { Button } from "../components/ui/button";
 import Socials from "../components/Socials";
 import Photo from "../components/Photo";
 const Home = () => {

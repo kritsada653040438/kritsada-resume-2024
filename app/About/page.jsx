@@ -1,9 +1,9 @@
 import React from "react";
 
-const Skills = () => {
+const About = () => {
     return (
         <div>
-            <h1>Skills</h1>
+            <h1>About me</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
                 nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non
@@ -18,4 +18,4 @@ const Skills = () => {
         </div>
     );
 }
-export default Skills;
+export default About;
