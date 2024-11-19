@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Image from "next/image"; // Use Next.js Image component for optimized images
-import { Button } from "./ui/button";
+import Image from "next/image"; 
 import Nav from "./Nav";
+import MobileNav from "./MobileNav";
 const Header = () => {
   return (
     <header className="py-8 xl:py-4">
@@ -18,10 +18,9 @@ const Header = () => {
         <div className="hidden xl:flex items-center gap-8">
         <Nav/>
         </div>
-
         {/* mobile nav */}
         <div className="xl:hidden">
-          mobile nav
+          <MobileNav />
         </div>
       </div>
     </header>
