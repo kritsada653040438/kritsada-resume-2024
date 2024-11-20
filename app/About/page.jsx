@@ -5,7 +5,7 @@ import { SiMongodb, SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
 const about = {
   title: "About me",
-description: "I'm a computer engineering student at Khon Kaen University with an interest in web development. I'm a fast learner and eager to explore new technologies.",
+description: "I'm a 3rd-year computer engineering student at Khon Kaen University with a passion for Business Analysis (BA) and Web Development. I am a fast learner, always eager to embrace new technologies and expand my skill set.",
   info: [
     {
       fieldName: "Name",
