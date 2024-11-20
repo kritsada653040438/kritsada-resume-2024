@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const educations = [
   {
-    level: "Primary education",
+    level: "Primary school",
     institution: "Banthum (Thumprachanukroh) School",
     description: "I studied in this school from grade 1 - grade 6",
     href: "http://www.banthum.ac.th/#",

@@ -77,7 +77,7 @@ const Volunteer = () => {
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
-              className="xl:h-[520px] mb-12"
+              className="xl:h-[450px] mb-12"
               onSlideChange={handleSlideChange}
             >
               {volunteers.map((item, index) => {
@@ -85,11 +85,11 @@ const Volunteer = () => {
                   <SwiperSlide key={index} className="w-full">
                     <div
                       className="h-[460px] relative group flex justify-center
-                            items-center bg-pink-50"
+                            items-center bg-primary"
                     >
                       {/* overlays */}
                       <div
-                        className="absolute top-0 bottom-0 w-full h-full bg-black/10
+                        className="absolute top-0 bottom-0 w-full h-full 
                       z-10"
                       ></div>
                       {/* image */}

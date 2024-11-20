@@ -5,7 +5,7 @@ import { SiMongodb, SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
 const about = {
   title: "About me",
-  description: "I am a full stack developer.",
+description: "I'm a computer engineering student at Khon Kaen University with an interest in web development. I'm a fast learner and eager to explore new technologies.",
   info: [
     {
       fieldName: "Name",
@@ -21,7 +21,7 @@ const about = {
     },
     {
       fieldName: "Address",
-      fieldvalue: "Khon Kaen, Thailand",
+      fieldvalue: "Khon Kaen,Thailand",
     },
     {
       fieldName: "Nationality",
@@ -36,7 +36,7 @@ const about = {
 
 const skills = {
   title: "Skills",
-  description: "I have experience in web development.",
+  description: "I have experience in web development using these technologies.",
   skillList: [
     {
       fieldName: "HTML",
@@ -75,7 +75,7 @@ const skills = {
 
 const personSkills = {
   head: "Personal Skills",
-  description: "Personal skills are abilities like communication, adaptability, teamwork, and problem-solving that enable effective interaction, task management, and achieving goals professionally.",
+  description: "I have strong soft skills that enable me to work effectively, adapt to challenges, and contribute to achieving goals.",
   items: [
       { duration: "01", title: "Teamwork", desc: "Collaborated with a team to achieve goals." },
       { duration: "02", title: "Communication", desc: "Collaborated through open communication." },
@@ -122,12 +122,48 @@ const About = () => {
           {/* Content */}
           <div className="min-h-[70vh] w-full">
             {/* About me */}
-            <TabsContent value="about" className="w-full">
-              About me
+            <TabsContent value="about" className="w-full text-center xl:text-left">
+              <div className="flex flex-col gap-[30px]">
+                <h3 className="text-4xl font-bold">{about.title}</h3>
+                <p className="max-w-[600px] mx-auto xl:mx-0">{about.description}</p>
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                  {about.info.map((info, index) => {
+                    return (
+                      <li key={index} className="flex justify-center items-center xl:justify-start gap-4">
+                        <span className="text-red-800">{info.fieldName}</span>
+                        <span className="text-xl text-red-950">{info.fieldvalue}</span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
             </TabsContent>
             {/* skills */}
-            <TabsContent value="skills" className="w-full">
-              skills
+            <TabsContent value="skills" className="w-full-full">
+              <div className="flex flex-col gap-[30px]">
+                <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                  <h3 className="text-4xl font-bold">{skills.title}</h3>
+                  <p className="max-w-[600px] text-black mx-auto xl:mx-0">{skills.description}</p>
+                </div>
+                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]"> 
+                  {skills.skillList.map((skill, index) => {
+                    return <li key={index}>
+                      <TooltipProvider delayDuration={100}>
+                        <Tooltip>
+                          <TooltipTrigger className="w-full h-[150px] bg-[#fffdfd] rounded-xl flex justify-center items-center group">
+                            <div className="text-8xl group-hover:text-red-900
+                            transition-all decoration-300">
+                              {skill.fieldvalue}
+                            </div>
+                            </TooltipTrigger>
+                          <TooltipContent><p className="capitalize">{skill.fieldName}</p></TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    </li>
+                  })}
+                </ul>
+
+              </div>
             </TabsContent>
             {/* personSkills */}
             <TabsContent value="personSkills" className="w-full">
@@ -138,12 +174,11 @@ const About = () => {
                     <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]"> 
                         {personSkills.items.map((item, index) => {
                             return (
-                                <li key={index} className="bg-[#f3f3f3] h-[184px] py-6 px-10 rounded-xl
+                                <li key={index} className="bg-[#fffdfd] h-[184px] py-6 px-10 rounded-xl
                                 flex flex-col justify-center items-center lg:items-start gap-1 text-red-800">
                                    <span className="text-xl text-black">{item.duration}</span> 
                                    <h3 className="text-2xl">{item.title}</h3>
                                    <div className="flex items-center gap-3">
-                                    
                                     <p className="text-red-950">{item.desc}</p>
                                    </div>
                                    

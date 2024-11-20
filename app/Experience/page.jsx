@@ -33,7 +33,7 @@ const projrects = [
   {
     num: "02",
     title: "Learning full-stack programming",
-    desc: "This Web Application Development course allowed me to take on the dual responsibility of **Frontend development**, where I designed and implemented an intuitive and visually appealing User Interface (UI), and **Backend development**, where I structured and developed a robust and efficient database system.",
+    desc: "This Web Application Development course allowed me to take on the dual responsibility of Frontend development (UI), and Backend development (database system).",
     stack: [{ name: "Html" }, { name: "CSS" }, { name: "Javascript" }, { name: "MondoDB" }],
     img: "/assets/work/thumb2.png",
     live: "",
@@ -41,7 +41,7 @@ const projrects = [
   },
   {
     num: "03",
-    title: "random food (Dishxdash) Web Developer",
+    title: "random food Web Developer",
     desc: "In this Web Application Development course project, I was responsible for the Frontend development of the entire website, co-developing the Backend, and collaborating on UX/UI design",
     stack: [{ name: "Html" }, { name: "CSS" }, { name: "Javascript" }, { name: "Next.js"} , { name: "MondoDB" }],
     img: "/assets/work/thumb3.png",
@@ -124,7 +124,7 @@ const Experience = () => {
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
-              className="xl:h-[520px] mb-12"
+              className="xl:h-[450px] mb-12"
               onSlideChange={handleSlideChange}
             >
               {projrects.map((item, index) => {
@@ -132,11 +132,11 @@ const Experience = () => {
                   <SwiperSlide key={index} className="w-full">
                     <div
                       className="h-[460px] relative group flex justify-center
-                            items-center bg-pink-50"
+                            items-center bg-primary"
                     >
                       {/* overlays */}
                       <div
-                        className="absolute top-0 bottom-0 w-full h-full bg-black/10
+                        className="absolute top-0 bottom-0 w-full h-full 
                       z-10"
                       ></div>
                       {/* image */}
