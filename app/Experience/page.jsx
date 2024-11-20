@@ -34,7 +34,7 @@ const projrects = [
     num: "02",
     title: "Learning full-stack programming",
     desc: "This Web Application Development course allowed me to take on the dual responsibility of Frontend development (UI), and Backend development (database system).",
-    stack: [{ name: "Html" }, { name: "CSS" }, { name: "Javascript" }, { name: "MondoDB" }],
+    stack: [{ name: "Html" }, { name: "CSS" }, { name: "Javascript" }, { name: "MongoDB" }, { name: "React" }, { name: "Node.js" }],
     img: "/assets/work/thumb2.png",
     live: "",
     github: "https://github.com/kritsada653040438/Kritsada-4386-webapp-labs.git",
@@ -43,10 +43,10 @@ const projrects = [
     num: "03",
     title: "random food Web Developer",
     desc: "In this Web Application Development course project, I was responsible for the Frontend development of the entire website, co-developing the Backend, and collaborating on UX/UI design",
-    stack: [{ name: "Html" }, { name: "CSS" }, { name: "Javascript" }, { name: "Next.js"} , { name: "MondoDB" }],
+    stack: [{ name: "Html" }, { name: "CSS" }, { name: "Javascript" }, { name: "Next.js"} , { name: "MongoDB" }],
     img: "/assets/work/thumb3.png",
     live: "",
-    github: "https://github.com/kritsada653040438/DishXDash.git",
+    github: "https://github.com/kritsada653040438/Webapp-Project-DishXDash.git",
   },
 ];
 

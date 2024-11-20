@@ -43,11 +43,11 @@ const MobileNav = () => {
             height={50} 
           />
       </div>
-      <nav className="mt-28 flex flex-col justify-center items-center gap-8">
+      <nav className="mt-28 flex flex-col justify-center items-center gap-9">
         {links.map((link, index) => {
           return (
             <Link key={index} href={link.path} className={`${link.path === pathname && "text-red-900 border-b-2 border-red-900"}
-                      capitalize font-medium hover:text-red-900 transition-all`}>
+                      capitalize font-medium hover:text-red-900 transition-all text-lg`}>
               {link.name}
             </Link>
           );

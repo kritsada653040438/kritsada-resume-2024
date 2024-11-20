@@ -16,8 +16,7 @@ const Home = () => {
               <span className="text-red-900">Kritsada Mahanam</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-gray/80">
-              I’m passionate about Business Analysis, Frontend Development, and
-              UX/UI Design. I’m currently studying Computer Engineering, and
+              I’m passionate about Business Analysis and Frontend Development. I’m currently studying Computer Engineering, and
               have done projects using HTML, CSS, JavaScript I’m looking for an
               internship where I can learn more and use my knowledge to help
               with real projects.

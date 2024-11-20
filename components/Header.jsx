@@ -15,11 +15,11 @@ const Header = () => {
           />
         </Link>
         {/* desktop nav and button */}
-        <div className="hidden xl:flex items-center gap-8">
+        <div className="hidden xl:flex items-center gap-8 text-lg">
         <Nav/>
         </div>
         {/* mobile nav */}
-        <div className="xl:hidden">
+        <div className="xl:hidden ">
           <MobileNav />
         </div>
       </div>
