@@ -48,6 +48,15 @@ const projrects = [
     live: "",
     github: "https://github.com/kritsada653040438/Webapp-Project-DishXDash.git",
   },
+  {
+    num: "04",
+    title: "Learning Assembly Programming Language",
+    desc: "This is my first experience learning Assembly language, using Linux (Ubuntu) as the operating system and compiling code with YASM.",
+    stack: [{ name: "Assembly" }, { name: " Linux (Ubuntu)" }, { name: " YASM" }],
+    img: "/assets/work/thumb5.png",
+    live: "",
+    github:"https://drive.google.com/drive/folders/1Vdd57QvDCO0Xc2XY14AvUFzk7W44yaK4?usp=drive_link",
+  },
 ];
 
 const Experience = () => {
